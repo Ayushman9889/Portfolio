@@ -52,7 +52,7 @@ const projects: Project[] = [
 const achievements = [
   { platform: 'LeetCode', sublabel: 'Contest Rating', stat: '1825+', badge: '300+ Problems Solved', profileUrl: 'https://leetcode.com/u/Ayushman_9889/' },
   { platform: 'CodeChef', sublabel: 'Contest Rating', stat: '1550+', badge: '2★ Rated', profileUrl: 'https://www.codechef.com/users/ayushman_67' },
-  { platform: 'HackerRank', sublabel: 'Problem Solving', stat: 'Intermediate', badge: 'Certified', profileUrl: 'https://www.hackerrank.com/certificates/55a645ec3075' },
+  { platform: 'HackerRank', sublabel: 'Problem Solving', stat: 'Intermediate', badge: 'Certified', profileUrl: 'https://www.hackerrank.com/certificates/iframe/55a645ec3075' },
   { platform: 'HackerRank', sublabel: 'C++', stat: '5★', badge: 'Badge Earned', profileUrl: 'https://www.hackerrank.com/profile/ayushmanjaiswal1' },
 ]
 
