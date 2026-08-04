@@ -27,7 +27,7 @@ const projects: Project[] = [
     ],
     tech: ['Next.js 16', 'React 19', 'JavaScript', 'Shadcn UI', 'Google Gemini API', 'Strapi CMS', 'NeonDB', 'Clerk', 'Arcjet', 'Cloudinary'],
     github: 'https://github.com/Ayushman9889/Cook-With-Zavo',
-    live: 'https://cook-with-zavo.vercel.app',
+    live: "https://zavo.ayushman.works",
   },
   {
     id: 'thumblify',
@@ -45,7 +45,7 @@ const projects: Project[] = [
     ],
     tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'TypeScript', 'Google Gemini API', 'Cloudinary', 'JWT Authentication'],
     github: 'https://github.com/Ayushman9889/Thumblify',
-    live: 'https://thumblify.vercel.app',
+    live: "https://thumblify.ayushman.works",
   },
 ]
 
