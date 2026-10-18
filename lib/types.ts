@@ -10,3 +10,14 @@ export type Project = {
   github: string
   live: string
 }
+
+export type Experience = {
+  id: string
+  role: string
+  company: string
+  location: string
+  period: string
+  initial: string
+  bullets: string[]
+  skills?: string[]
+}

@@ -174,7 +174,7 @@ export default function HeroCanvas() {
     }
 
     let state = 0
-    let mouse = { x: -999, y: -999 }
+    const mouse = { x: -999, y: -999 }
     let frame = 0
     const CYCLE_FRAMES = 280
     const LERP = 0.055

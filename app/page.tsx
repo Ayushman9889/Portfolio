@@ -1,13 +1,13 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
 import { Github, Linkedin, Mail } from 'lucide-react'
-import HeroCanvas from '../components/HeroCanvas'
 import ProjectRow from '../components/ProjectRow'
 import ProjectPanel from '../components/ProjectPanel'
+import ExperienceRow from '../components/ExperienceRow'
 import SkillBox from '../components/SkillBox'
 import HeroTerminal from '../components/HeroTerminal'
 import HeroText from '../components/HeroText'
-import type { Project } from '../lib/types'
+import type { Project, Experience } from '../lib/types'
 
 
 const projects: Project[] = [
@@ -46,6 +46,23 @@ const projects: Project[] = [
     tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'TypeScript', 'Google Gemini API', 'Cloudinary', 'JWT Authentication'],
     github: 'https://github.com/Ayushman9889/Thumblify',
     live: "https://thumblify.ayushman.works",
+  },
+]
+
+const experiences: Experience[] = [
+  {
+    id: 'abes-ta-dsa',
+    initial: 'A',
+    role: 'Student Teaching Assistant - Data Structures & Algorithms',
+    company: 'ABES Engineering College',
+    location: 'Ghaziabad, Uttar Pradesh',
+    period: 'July 2026 - Present',
+    bullets: [
+      'Mentored 100+ students in Data Structures & Algorithms (DSA) problem-solving sessions covering arrays, trees, graphs, and dynamic programming.',
+      'Debugged and reviewed student-submitted C++ solutions in real time, identifying logical errors and guiding students toward correct, optimized implementations.',
+      'Explained algorithmic concepts and time-space complexity trade-offs, enabling students to transition from brute-force to efficient solutions.',
+    ],
+    skills: ['C++', 'Data Structures', 'Algorithms', 'Dynamic Programming', 'Code Review', 'Mentorship'],
   },
 ]
 
@@ -152,6 +169,13 @@ export default function Home() {
           <p className="text-[15px] font-[500] text-text-primary mb-6">Work &amp; Projects</p>
           {projects.map((project) => (
             <ProjectRow key={project.id} project={project} onClick={() => setSelectedProject(project)} />
+          ))}
+        </section>
+
+        <section id="experience" className="mb-[50px]">
+          <p className="text-[15px] font-[500] text-text-primary mb-6">Experience</p>
+          {experiences.map((exp) => (
+            <ExperienceRow key={exp.id} experience={exp} />
           ))}
         </section>
 
