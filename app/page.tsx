@@ -62,7 +62,7 @@ const experiences: Experience[] = [
       'Debugged and reviewed student-submitted C++ solutions in real time, identifying logical errors and guiding students toward correct, optimized implementations.',
       'Explained algorithmic concepts and time-space complexity trade-offs, enabling students to transition from brute-force to efficient solutions.',
     ],
-    skills: ['C++', 'Data Structures', 'Algorithms', 'Dynamic Programming', 'Code Review', 'Mentorship'],
+    skills: ['C++', 'Data Structures', 'Algorithms', 'Code Review', 'Mentorship'],
   },
 ]
 
@@ -165,17 +165,17 @@ export default function Home() {
           <HeroTerminal />
         </section>
 
-        <section id="work" className="mb-[50px]">
-          <p className="text-[15px] font-[500] text-text-primary mb-6">Work &amp; Projects</p>
-          {projects.map((project) => (
-            <ProjectRow key={project.id} project={project} onClick={() => setSelectedProject(project)} />
-          ))}
-        </section>
-
         <section id="experience" className="mb-[50px]">
           <p className="text-[15px] font-[500] text-text-primary mb-6">Experience</p>
           {experiences.map((exp) => (
             <ExperienceRow key={exp.id} experience={exp} />
+          ))}
+        </section>
+
+        <section id="work" className="mb-[50px]">
+          <p className="text-[15px] font-[500] text-text-primary mb-6">Work &amp; Projects</p>
+          {projects.map((project) => (
+            <ProjectRow key={project.id} project={project} onClick={() => setSelectedProject(project)} />
           ))}
         </section>
 
